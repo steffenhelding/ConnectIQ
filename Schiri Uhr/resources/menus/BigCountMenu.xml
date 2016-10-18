@@ -1,0 +1,4 @@
+<menu id="BigCountMenu">
+    <menu-item id="item_ran">@Strings.ran</menu-item>
+    <menu-item id="item_left">@Strings.left</menu-item>
+</menu>

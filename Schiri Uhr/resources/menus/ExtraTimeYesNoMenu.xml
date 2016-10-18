@@ -1,0 +1,4 @@
+<menu id="ExtraTimeYesNo">
+    <menu-item id="item_yes">@Strings.yes</menu-item>
+    <menu-item id="item_no">@Strings.no</menu-item>
+</menu>

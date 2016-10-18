@@ -1,0 +1,7 @@
+<menu id="ExtraTimeTime">
+<menu-item id="item_enable">@Strings.extratime_enable</menu-item>
+<menu-item id="item_5">@Strings.extratime_5</menu-item>
+<menu-item id="item_10">@Strings.extratime_10</menu-item>
+<menu-item id="item_15">@Strings.extratime_15</menu-item>
+<menu-item id="item_same">@Strings.extratime_same</menu-item>
+</menu>

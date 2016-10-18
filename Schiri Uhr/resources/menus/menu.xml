@@ -1,0 +1,9 @@
+<menu id="MainMenu">
+    <menu-item id="item_45">@Strings.menu_label_1</menu-item>
+    <menu-item id="item_40">@Strings.menu_label_2</menu-item>
+    <menu-item id="item_35">@Strings.menu_label_5</menu-item>
+    <menu-item id="item_30">@Strings.menu_label_3</menu-item>
+    <menu-item id="item_custom">@Strings.menu_label_4</menu-item>
+    <menu-item id="item_extratime">@Strings.menuExtraTime</menu-item>
+    <menu-item id="item_screen">@Strings.screen</menu-item>
+</menu>

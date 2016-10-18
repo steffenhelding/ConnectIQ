@@ -1,0 +1,33 @@
+<strings>
+     <string id="AppName">Διαιτητής</string>
+    <string id="menu_label_1">45:00</string>
+    <string id="menu_label_2">40:00</string>
+    <string id="menu_label_3">30:00</string>
+    <string id="menu_label_4">Επιλογή διάρκειας</string>
+    <string id="menu_label_5">35:00</string>
+    <string id="setup">Ρυθμίσεις</string>
+    <string id="halftime">Ημίχρονο</string>
+    <string id="DefaultResponse">Καμία απόκριση</string>
+    <string id="DialogHeader">Να γίνει αποθήκευση?</string>
+    <string id="Cancel">Απόρριψη</string>
+    <string id="Confirm">Αποθήκευση</string>
+    <string id="extratime_5">5:00</string>
+    <string id="extratime_10">10:00</string>
+    <string id="extratime_15">15:00</string>
+    <string id="extratime_enable">Παράταση?</string>
+    <string id="yes">Ναι</string>
+    <string id="no">Όχι</string>
+    <string id="menuExtraTime">Ρύθμιση παράτασης</string>
+    <string id="label_extra">ΠΑΡ</string>
+    <string id="extra_half">Ημίχρονο Παράτ.</string>
+    <string id="ExtraDialogHeader">Παράταση?</string>
+    <string id="ht">ΗΜΙΧ</string>
+    <string id="game_over">Τέλος χρόνου</string>
+    <string id="back">Πατήστε "Πίσω" για έξοδο</string>
+    <string id="screen">Ρυθμίσεις οθόνης</string>
+    <string id="activityData">Στοιχεία δραστηριότητας</string>
+    <string id="timer">Μεγαλύτεροι αριθμοί?</string>
+    <string id="ran">Διάρκεια</string>
+    <string id="left">Χρόνος που απομένει</string>
+    <string id="extratime_same">Ίδιο με το Ημίχρονο</string>
+</strings> 

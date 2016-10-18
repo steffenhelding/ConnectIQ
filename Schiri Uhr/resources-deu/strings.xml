@@ -1,0 +1,34 @@
+<strings>
+    <string id="AppName">Schiri Uhr</string>
+
+    <string id="menu_label_1">45:00</string>
+    <string id="menu_label_2">40:00</string>
+    <string id="menu_label_3">30:00</string>
+    <string id="menu_label_4">Eigene Zeit</string>
+    <string id="menu_label_5">35:00</string>
+    <string id="setup">Einstellungen</string>
+    <string id="halftime">Halbzeit</string>
+    <string id="DefaultResponse">No response</string>
+    <string id="DialogHeader">Aktivität speichern?</string>
+    <string id="Cancel">Verwerfen</string>
+    <string id="Confirm">Speichern</string>
+    <string id="extratime_5">5:00</string>
+    <string id="extratime_10">10:00</string>
+    <string id="extratime_15">15:00</string>
+    <string id="extratime_enable">Verlängerung?</string>
+    <string id="yes">Ja</string>
+    <string id="no">Nein</string>
+    <string id="menuExtraTime">Einst. Verlängerung</string>
+    <string id="label_extra">VL</string>
+    <string id="extra_half">Halbzeit VL</string>
+    <string id="ExtraDialogHeader">Verlängerung?</string>
+    <string id="ht">HZ</string>
+    <string id="game_over">Spielzeit vorbei</string>
+    <string id="back">3 Mal zurück drücken für Abbruch</string>
+    <string id="screen">Anzeige Einstellungen</string>
+    <string id="activityData">Aktivitätsdaten?</string>
+    <string id="timer">Welchen Timer groß?</string>
+    <string id="ran">aufgelaufene Zeit</string>
+    <string id="left">verbleibende Zeit</string>
+    <string id="extratime_same">Gleich wie HZ</string>
+</strings>

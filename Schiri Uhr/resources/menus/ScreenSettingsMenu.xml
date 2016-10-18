@@ -1,0 +1,4 @@
+<menu id="ScreenSettingsMenu">
+	<menu-item id="item_activityData">@Strings.activityData</menu-item>
+	<menu-item id="item_timer">@Strings.timer</menu-item>
+</menu>
