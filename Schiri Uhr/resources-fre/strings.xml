@@ -1,0 +1,33 @@
+<strings>
+    <string id="AppName">Chrono Arbitre</string>
+	<string id="menu_label_1">45:00</string>
+    <string id="menu_label_2">40:00</string>
+    <string id="menu_label_3">30:00</string>
+    <string id="menu_label_4">Chrono perso</string>
+    <string id="menu_label_5">35:00</string>
+    <string id="setup">Configurer</string>
+    <string id="halftime">Mi-temps</string>
+    <string id="DefaultResponse">Sans réponse</string>
+    <string id="DialogHeader">Sauvegarder?</string>
+    <string id="Cancel">Annuler</string>
+    <string id="Confirm">Sauvegarder</string>
+    <string id="extratime_5">5:00</string>
+    <string id="extratime_10">10:00</string>
+    <string id="extratime_15">15:00</string>
+    <string id="extratime_enable">Temps ajouté?</string>
+    <string id="yes">Oui</string>
+    <string id="no">Non</string>
+    <string id="menuExtraTime">Temps ajouté options</string>
+    <string id="label_extra">TA</string>
+    <string id="extra_half">Mi-temps TA</string>
+    <string id="ExtraDialogHeader">Temps ajouté?</string>
+    <string id="ht">MT</string>
+    <string id="game_over">Temps réglementaire terminé</string>
+    <string id="back">Appuyer retour 3 fois pour annuler</string>
+    <string id="screen">Option écran</string>
+    <string id="activityData">Donnée d'activité</string>
+    <string id="timer">Quel chrono gros?</string>
+    <string id="ran">Temps complété</string>
+    <string id="left">Temps restant</string>
+    <string id="extratime_same">Même que mi-temps</string>
+</strings>
