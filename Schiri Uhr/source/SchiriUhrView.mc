@@ -11,11 +11,14 @@ var m_gametimeCount = 0;
 var m_PauseTimeCount = 0;
 var m_PauseTimeVibCount = 0;
 var gps = 0;
+var settings;
 
 class SchiriUhrView extends Ui.View {
 
     function initialize() {
         View.initialize();
+        settings = Sys.getDeviceSettings();
+        System.println(settings.screenShape);
     }
 
     // Load your resources here
@@ -189,26 +192,52 @@ class SchiriUhrView extends Ui.View {
         
         //Show Extra Time if its enabled on the bottom of the screen
         if (extratime) {
-        	dc.setColor( Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT );
-        	dc.drawText( (2), dc.getHeight() /2 + 55, Gfx.FONT_SMALL, Ui.loadResource( Rez.Strings.label_extra ) , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
-        	dc.drawText( (dc.getWidth()-2), dc.getHeight() /2 + 55, Gfx.FONT_SMALL, stringExtraTime , Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_RIGHT );
+        	if (settings.screenShape == Sys.SCREEN_SHAPE_RECTANGLE) {
+	        	dc.setColor( Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( (2), dc.getHeight() /2 + 55, Gfx.FONT_SMALL, Ui.loadResource( Rez.Strings.label_extra ) , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        	dc.drawText( (dc.getWidth()-2), dc.getHeight() /2 + 55, Gfx.FONT_SMALL, stringExtraTime , Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_RIGHT );
+        	} else {
+        		dc.setColor( Gfx.COLOR_DK_GREEN, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( (30), dc.getHeight() /2 + 55, Gfx.FONT_SMALL, Ui.loadResource( Rez.Strings.label_extra ) , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        	dc.drawText( (dc.getWidth()-30), dc.getHeight() /2 + 55, Gfx.FONT_SMALL, stringExtraTime , Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_RIGHT );
+        		
+        	}
         }
         
-        //GPS Strenght
-        if (gps <= 1 or gps == null) {
-            dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
-        	dc.drawText( (2), 0, Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
-        } else if (gps <= 2) {
-        	dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
-        	dc.drawText( (2), 0, Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
-        } else {
-        	dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
-        	dc.drawText( (2), 0, Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
-        }
-        
-        //Which halftime is (going to) run
-        dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
-        dc.drawText( ((dc.getWidth()-2)), 0, Gfx.FONT_SMALL, Ui.loadResource( Rez.Strings.ht ) + " " + hz , Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_RIGHT );
+        if (settings.screenShape == Sys.SCREEN_SHAPE_RECTANGLE) {
+	        //GPS Strenght
+	        if (gps <= 1 or gps == null) {
+	            dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( (2), 0, Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        } else if (gps <= 2) {
+	        	dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( (2), 0, Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        } else {
+	        	dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( (2), 0, Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        }
+	        
+	        //Which halftime is (going to) run
+	        dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
+	        dc.drawText( ((dc.getWidth()-2)), 0, Gfx.FONT_SMALL, Ui.loadResource( Rez.Strings.ht ) + " " + hz , Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_RIGHT );
+		} else {
+			//GPS Strenght
+	        if (gps <= 1 or gps == null) {
+	            dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( 30, (dc.getHeight() / 2 - 55), Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        } else if (gps <= 2) {
+	        	dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( 30, (dc.getHeight() / 2 - 55), Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        } else {
+	        	dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
+	        	dc.drawText( 30, (dc.getHeight() / 2 - 55), Gfx.FONT_SMALL, "GPS" , Gfx.TEXT_JUSTIFY_LEFT | Gfx.TEXT_JUSTIFY_LEFT );
+	        }
+	        
+	        //Which halftime is (going to) run
+	        dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
+	        dc.drawText( (dc.getWidth() - 30), (dc.getHeight() / 2 - 55), Gfx.FONT_SMALL, Ui.loadResource( Rez.Strings.ht ) + " " + hz , Gfx.TEXT_JUSTIFY_RIGHT | Gfx.TEXT_JUSTIFY_RIGHT );
+			
+		}
 	}
     
     //Get actual clock time
