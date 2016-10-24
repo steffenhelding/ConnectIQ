@@ -1,0 +1,33 @@
+<strings>
+    <string id="AppName">Referee Watch</string>
+	<string id="menu_label_1">45:00</string>
+    <string id="menu_label_2">40:00</string>
+    <string id="menu_label_3">30:00</string>
+    <string id="menu_label_4">Personalizza Tempo</string>
+    <string id="menu_label_5">35:00</string>
+    <string id="setup">Impostazioni</string>
+    <string id="halftime">Tempo</string>
+    <string id="DefaultResponse">Nessuna risposta</string>
+    <string id="DialogHeader">Salva attivit�?</string>
+    <string id="Cancel">Cancella</string>
+    <string id="Confirm">Salva</string>
+    <string id="extratime_5">5:00</string>
+    <string id="extratime_10">10:00</string>
+    <string id="extratime_15">15:00</string>
+    <string id="extratime_enable">Tempo supplementare?</string>
+    <string id="yes">Si</string>
+    <string id="no">No</string>
+    <string id="menuExtraTime">Tempo supplementare Impostazioni</string>
+    <string id="label_extra">ET</string>
+    <string id="extra_half">Tempo TS</string>
+    <string id="ExtraDialogHeader">Tempo supplementare?</string>
+    <string id="ht">HT</string>
+    <string id="game_over">Tempo Scaduto</string>
+    <string id="back">Premere Back 3 volte per uscire</string>
+    <string id="screen">Settaggi schermo</string>
+    <string id="activityData">Dati attivit�</string>
+    <string id="timer">Quale timer grande?</string>
+    <string id="ran">Tempo trascorso</string>
+    <string id="left">Tempo mancante</string>
+    <string id="extratime_same">Stesso tempo</string>
+</strings>
